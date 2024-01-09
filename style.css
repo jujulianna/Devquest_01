@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: hsl(257, 40%, 49%) ;
+}
+
+body{
+    background: url(images/bg-desktop.svg);
+    margin: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo{
+    width: 150px;
+    height: 50px;
+    margin-left: 60px;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media(max-width:900px){
+    main {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .content{
+        display: flex;
+        margin-left: 25%;
+    }
+}  
+
+.imagem{
+    padding: 1%;
+    max-width: 950px;
+    max-height: 450px;
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+    width: 400px;
+    height: 400px;
+    color: white;
+}
+
+@media(max-width:768px){
+    .content{
+        display: flex;
+        margin-left: 12%;
+    }
+
+    .imagem{
+        max-width: 500px;
+        max-height: 350px;
+        width: auto;
+        height: auto;   
+    }
+} 
+
+@media(max-width:375px){
+    .content{
+        display: flex;
+        margin-left: 8%;
+        max-width: 300px;
+        max-height: 300px;
+        width: auto;
+        height: auto;  
+    }
+
+    .imagem{
+        max-width: 300px;
+        max-height: 300px;
+        width: auto;
+        height: auto;   
+    }
+} 
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 27px;  
+    text-align: start;  
+    font-weight: 600;
+}
+
+h3{
+    font-size: 14px;
+    font-weight: 400;  
+    margin-bottom: 25px; 
+}
+
+button{
+    width: 140px;
+    height: 40px;
+    border-radius: 36px;
+    background-color: white;
+    color:  hsl(257, 40%, 49%); 
+    border: none;
+    outline: none;
+}
+
+button:hover{
+    background-color: hsl(300, 69%, 71%); 
+    color: white; 
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+@media(max-width:768px){
+    footer{
+        display: flex;
+        justify-content: center;
+        margin-left: 38%;
+    }
+}
+
+a{
+    margin-right: 2%;
+}
+
+ion-icon {
+    color: white;
+    width: 25px;
+    height: 25px;
+  }
+
